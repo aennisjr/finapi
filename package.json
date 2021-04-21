@@ -1,0 +1,22 @@
+{
+  "name": "finapi",
+  "version": "1.0.0",
+  "description": "A self-hosted REST API that scrapes data from Yahoo Finance.",
+  "main": "server.py",
+  "scripts": {
+    "test": "python server.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aennisjr/finapi"
+  },
+  "keywords": [
+    "Yahoo",
+    "API",
+    "finance",
+    "free",
+    "self-hosted"
+  ],
+  "author": "Aggrey Ennis",
+  "license": "MIT"
+}
