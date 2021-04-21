@@ -26,14 +26,14 @@ When you run the command above you will see a message like this in your console:
 ```
 Running on http://127.0.0.1:5001/
 ```
-Navigate to that link, ``http://127.0.0.1:5001/`` to trigger the scraping process and you should get a JSON payload in return after a few seconds. While the server is running, you can make as many requests as you wish to this endpoint to keep getting fresh data.
+Navigate to that link, ``http://127.0.0.1:5001/`` to trigger the scraping process and you should get a JSON payload in return after a few seconds. While the server is running, you can make as many GET requests as you wish to this endpoint to keep getting fresh data. You can also use any other method, such as AJAX requests, to send GET requests to this endpoint to get a response.
 
 
 #### Single route
 ```
 http://127.0.0.1:5001/single/
 ```
-You can use the single route to get information about only one symbol. It returns a JSON object similar to the other method.
+You can use the single route to get information about only one symbol. It returns a JSON object similar to the other route. Also, like the default route, you can use any method you like to send GET requests to this route.
 
 ### Benefits
 Since this is self hosted, you can make as many requests to the API as you wish without worrying about usage limits or service timeouts. You also do not need to pay for it, as is the case with almost all finance APIs available.
