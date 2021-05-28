@@ -16,6 +16,9 @@ default_url = 'https://finance.yahoo.com/quote/'
 # Set the time delay (in seconds) between requests for each resource - recommended: 2 seconds
 resource_request_delay = 2
 
+# Set the maximm number of seconds for the requests (by default, requests will wait indefinitely on the response)
+timeout_secounds = 60
+
 resources = [
 	'V',
     'GME',
@@ -46,7 +49,7 @@ def if_not_null(value):
 	return 'null'
 
 def action(res):
-	request = requests.get(default_url + res)
+	request = requests.get(default_url + res, timeout=timeout_secounds)
 	soup = BeautifulSoup(request.content, 'html.parser')
 
 	# Item Name
